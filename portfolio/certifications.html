@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Certifications — Mutyala Mohini Sri Mani</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Mohini</h1>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="certifications.html" class="nav-link active">Certifications</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="Mohini.pdf" download class="btn">Download Resume</a>
+    </nav>
+  </header>
+
+  <main class="section page-content">
+    <h2>Certifications</h2>
+
+    <ul class="cert-list cert-list-page">
+      <!-- Each item must map to an image file in the folder. Change filenames if necessary. -->
+      <li><button class="cert-open" data-img="dbms.png">NPTEL DBMS Elite Certification</button></li>
+     <li>
+  <a href="https://www.codechef.com/users/mohini_mutyala/certificates" target="_blank">
+    <button class="cert-open">Multiple CodeChef Certifications (2023–2025)</button>
+  </a>
+</li>
+
+      <li><button class="cert-open" data-img="flutter.jpeg">15-Day Flutter Workshop</button></li>
+      <li><button class="cert-open" data-img="dca.png">DCA - Hi-Tech Computers</button></li>
+      <li><button class="cert-open" data-img="js.png">Two-Day Workshop on JavaScript “Talaash”</button></li>
+      <li><button class="cert-open" data-img="powerbi.jpg">Workshop on Power BI and Gen AI Certification</button></li>
+    </ul>
+  </main>
+
+  <!-- Modal for certificate image -->
+  <div id="certModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close">✕</button>
+      <img id="certImg" src="" alt="Certificate image" />
+      <p id="certCaption" class="muted"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    © 2025 Mutyala Mohini Sri Mani
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

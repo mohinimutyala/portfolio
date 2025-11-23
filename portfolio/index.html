@@ -1,137 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mutyala Mohini Sri Mani | Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mutyala Mohini Sri Mani — Home</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
+  <!-- Navbar (same on all pages) -->
   <header class="navbar">
     <h1 class="logo">Mohini</h1>
     <nav>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#certifications" class="nav-link">Certifications</a>
-      <a href="#hobbies" class="nav-link">Hobbies</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="certifications.html" class="nav-link">Certifications</a>
+      <a href="contact.html" class="nav-link">Contact</a>
       <a href="Mohini.pdf" download class="btn">Download Resume</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Hi, I’m <span class="highlight">Mutyala Mohini Sri Mani</span></h2>
-      <p>
-        Aspiring Software Developer | Java & Python Enthusiast<br />
-        Passionate about technology, innovation, and real-world problem solving.
-      </p>
-      <a href="#about" class="btn-primary nav-link">Explore More</a>
+  <!-- Hero / Landing -->
+  <main class="hero-home">
+    <div class="hero-inner">
+
+      <!-- TEXT -->
+      <div class="hero-text">
+        <h2>Hello, I’m <span class="highlight">Mutyala Mohini Sri Mani</span></h2>
+        <p class="tagline">
+          A self-driven and motivated B.Tech student with strong communication skills, innovative thinking,
+          and a passion for technology. Skilled in programming, problem-solving, and emerging technologies,
+          I aim to apply my technical knowledge and creativity to contribute to organizational success while
+          ensuring personal and professional growth.
+        </p>
+
+        <div class="hero-ctas">
+          <a class="btn-primary" href="about.html">About Me</a>
+          <a class="btn-outline" href="projects.html">View Projects</a>
+          
+        </div>
+        <br>
+      </div>
+      
+
+      <!-- PROFILE PHOTO (MUST BE OUTSIDE .hero-text) -->
+      <div class="hero-photo" aria-hidden="false">
+        <img src="profile.jpg" alt="Mohini Photo" id="profilePic" />
+      </div>
+
     </div>
-  </section>
+  </main>
 
-  <!-- Profile Photo -->
-  <section class="profile-photo">
-    <img src="profile.jpg" alt="Mohini Photo" id="profilePic" />
-  </section>
+  <!-- Main sections example (start pages use their own files) -->
+  <!-- If you want a preview section on home, add a .section here -->
+<br><br><br><br>
+  <footer class="site-footer">
+    © 2025 Mutyala Mohini Sri Mani
+  </footer>
 
-  <!-- Main Content (Hidden initially, revealed with scroll/click) -->
-  <div id="mainContent">
-    <!-- About Section -->
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>
-        I’m a B.Tech Information Technology student at Sasi Institute of Technology & Engineering
-        with a CGPA of 8.8. I enjoy full-stack development, exploring AI/ML, and building useful tools
-        that make a difference.
-      </p>
-      <p><strong>Father’s Name:</strong> Mutyala Sattipandu</p>
-      <p><strong>Mother’s Name:</strong> Mutyala Ventaka Lakshmi Prasanna</p>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="projects">
-        <div class="card">
-          <h3>Speech Text Reader</h3>
-          <p>
-            A Java-based accessibility tool that converts text into speech with customization features.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Healthcare Chatbot</h3>
-          <p>
-            AI-powered chatbot for rural health awareness built using Python, Flask, and NLP.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>Java</span>
-        <span>Python</span>
-        <span>C</span>
-        <span>Spring Boot</span>
-        <span>Flutter</span>
-        <span>GitHub</span>
-        <span>DBMS</span>
-      </div>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications" class="section">
-      <h2>Certifications</h2>
-      <ul class="cert-list">
-        <li>NPTEL DBMS Elite Certification</li>
-        <li>Multiple CodeChef Certifications (2023–2025)</li>
-        <li>15-Day Flutter Workshop</li>
-        <li>DCA - Hi-Tech Computers</li>
-        <li>Two-Day Workshop on JavaScript “Talaash”</li>
-        <li>Workshop on Power BI and Gen AI Certification</li>
-      </ul>
-    </section>
-
-    <!-- Hobbies -->
-    <section id="hobbies" class="section">
-      <h2>Hobbies</h2>
-      <div class="skills">
-        <span>Designing</span>
-        <span>Listening to Music</span>
-        <span>Exploring New Tools</span>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Let’s connect — I’d love to collaborate or discuss new opportunities!</p>
-
-      <form id="contactForm">
-        <input type="text" name="from_name" placeholder="Your Name" required />
-        <input type="email" name="from_email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-
-      <div class="contact-links">
-        <a href="mailto:mohini.mutyala@sasi.ac.in">📧 Email</a>
-        <a href="https://linkedin.com/in/mohini-mutyala-9ba75229b" target="_blank">🔗 LinkedIn</a>
-        <a href="https://github.com/mohini_mutyala" target="_blank">💻 GitHub</a>
-      </div>
-    </section>
-
-    <footer>
-      © 2025 Mutyala Mohini Sri Mani 
-    </footer>
-  </div>
-
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
